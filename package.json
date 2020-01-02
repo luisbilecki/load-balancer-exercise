@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "loadtest_1": "loadtest -t 5 -c 100 --rps 1000 http://localhost:80"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +13,8 @@
   "dependencies": {
     "bottleneck": "^2.3.0",
     "sleep": "^5.1.1"
+  },
+  "devDependencies": {
+    "loadtest": "^4.0.0"
   }
 }
